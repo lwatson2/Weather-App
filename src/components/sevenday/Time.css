@@ -1,0 +1,16 @@
+.List{
+	display: flex;
+	max-width: 500px;
+	flex-direction: row;
+	position: absolute;
+	top: 70%;
+	left: 34%;
+}
+.WeatherList{
+	list-style-type: none;
+}
+.LookAhead{
+	text-align: center;
+	padding-left: 77px;
+	padding-top: 66px;
+}

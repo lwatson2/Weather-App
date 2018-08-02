@@ -1,0 +1,45 @@
+/*.Scrolling-Wrapper {
+   width: 50%;
+  min-height: 200px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  display: block;
+  margin: auto
+	  }
+	  */
+  .Card {
+  min-width: 200px;
+  margin: 5px;
+  display: inline-block;
+  height: 150px
+  }
+.Card-Item {
+	display: inline-block;
+}
+.Current-Temp {
+	width: 170px;
+	position: relative;
+	top: 124px;
+	left: 28px;
+}
+.Current-Conditions {
+	position: relative;
+	top: 12px;
+	left: 45%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+	max-width: 200px;
+
+}
+.C-Icon {
+	padding-left: 69px;
+}
+.C-Temp{
+	text-align: center
+}
+.C-Description{
+	text-align: center;
+}
+.C-Conditions{
+	text-align: center;
+	padding-left: 92px
+}
