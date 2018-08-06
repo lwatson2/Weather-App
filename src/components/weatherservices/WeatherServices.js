@@ -1,8 +1,12 @@
-
+import Search from '../search/Search'
 
 const API_URL = 'http://api.openweathermap.org/data/2.5/'
 
 export function CurrentWeatherCall(props) {
+	if(props){
+		console.log(props)
+	}
+	
 	
 	return fetch(`${API_URL}weather?q=London&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
       .then(response => response.json())

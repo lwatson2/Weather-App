@@ -7,7 +7,7 @@ const Sevenday = (props) => {
 	
 		  const { fivedayforecast } = props
 		
-		 console.log(fivedayforecast)
+		
 		 
 		  if(fivedayforecast.list){
 		  return (

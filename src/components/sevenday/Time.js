@@ -22,7 +22,7 @@ const Time = (props) => {
 		<div className="List">
 		{Object.keys(newList).map((list) => (
 			<ul key = {uuidv4()} className='WeatherList'>
-				<li key = {uuidv4()}>{newList[list].main.temp}</li>
+				<li key = {uuidv4()}>{newList[list].main.temp}°F</li>
 				<li key = {uuidv4()}>{newList[list].weather[0].description}</li>
 				<li key = {uuidv4()}><img alt='weather icon'className="T-Icon" src={`http://openweathermap.org/img/w/${newList[list].weather[0].icon}.png`}/></li>
 				</ul>
