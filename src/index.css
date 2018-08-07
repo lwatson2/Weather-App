@@ -4,9 +4,7 @@ body {
   font-family: sans-serif;
 }
 html {
-background: rgb(69,72,77);
-background: -moz-linear-gradient(left, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(left, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-background: linear-gradient(to right, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
+	background-color: #37474f;
+	color: white;
+
 }

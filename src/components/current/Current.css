@@ -24,10 +24,11 @@
 }
 .Current-Conditions {
 	position: relative;
-	top: 12px;
-	left: 45%;
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
-	max-width: 200px;
+    top: 12px;
+    left: 45%;
+    box-shadow: 2px 5px 20px;
+    max-width: 200px;
+    border-radius: 16px;
 
 }
 .C-Icon {

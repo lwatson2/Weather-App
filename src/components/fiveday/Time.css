@@ -5,9 +5,12 @@
 	position: absolute;
 	top: 70%;
 	left: 34%;
+	box-shadow: 2px 5px 20px;
+	border-radius: 20px
 }
 .WeatherList{
 	list-style-type: none;
+	padding: 6px;
 }
 .LookAhead{
 	text-align: center;

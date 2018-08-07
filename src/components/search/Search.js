@@ -1,6 +1,6 @@
 import React from 'react'
 import './Search.css'
-import { CurrentWeatherCall, FiveDayCall } from '../weatherservices/WeatherServices'
+
 
 class Search extends React.Component {
 	constructor(props){
@@ -40,11 +40,12 @@ class Search extends React.Component {
 	render(){
 
 	return(
-		<form className="Search" onSubmit={this.handleSubmit}>
-			<input value={this.state.searchQuery} onChange={this.handleChange}/>
-			<button>Submit</button>
+		<div className="Search">
+		<form onSubmit={this.handleSubmit}>
+			<input placeholder="Search City" className="Input"value={this.state.searchQuery} onChange={this.handleChange}/>
+			<button className='myButton'>Submit</button>
 		</form>
-
+		</div>
 		)
 }
 }

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Current from './current/Current'
-import { CurrentWeatherCall, FiveDayCall } from './weatherservices/WeatherServices'
-import ListHandler from './sevenday/ListHandler'
-import Time from './sevenday/Time'
+import ListHandler from './fiveday/ListHandler'
+import Time from './fiveday/FiveDayForecast'
 import Search from './search/Search'
 
 
@@ -152,7 +151,7 @@ class App extends Component {
         <Search submit={this.handleSubmit}/>
        
         
-        <button onClick={this.FetchUserWeather}>CLick</button>
+        
         <Current
         conditions={conditions}
         currentTemp={currentTemp}
