@@ -53,7 +53,7 @@ class App extends Component {
   FetchCurrentWeather(){
             
   
-              fetch(`https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+              fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
               .then(response => response.json())
               .then(parsedJSON => 
                   
@@ -70,7 +70,7 @@ class App extends Component {
 
   FetchFiveWeather(){
           
-     fetch(`https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+     fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
       .then(response => response.json())
       .then(parsedJSON => 
       this.setState({
@@ -94,7 +94,7 @@ class App extends Component {
   }
   FetchUserWeather(){
     console.log('user',this.state.lat)
-    fetch(`https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+    fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
     .then(response => response.json())
     .then(parsedJSON => 
                   
