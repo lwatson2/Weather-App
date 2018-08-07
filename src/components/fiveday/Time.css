@@ -17,3 +17,12 @@
 	padding-left: 77px;
 	padding-top: 66px;
 }
+
+@media (min-width: 400px){
+	.LookAhead{
+		    padding: 8px;
+    padding-left: 116px;
+    
+    min-width: 400px;
+	}
+}
