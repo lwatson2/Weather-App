@@ -82,7 +82,7 @@ class App extends Component {
   }
   FetchUserFiveDay(){
     console.log("render")
-    fetch(`https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+    fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
     .then(response => response.json())
     .then(parsedJSON => 
       this.setState({
