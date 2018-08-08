@@ -1,12 +1,4 @@
-/*.Scrolling-Wrapper {
-   width: 50%;
-  min-height: 200px;
-  white-space: nowrap;
-  overflow-x: scroll;
-  display: block;
-  margin: auto
-	  }
-	  */
+
   .Card {
   min-width: 200px;
   margin: 5px;

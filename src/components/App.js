@@ -6,13 +6,13 @@ import Search from './search/Search'
 
 
 
-   
+   const API_URL = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/'
 
 class App extends Component {
  /*
   Have to define the state in the origin this.state then set it equal to the data inside the fetch API
  */ 
-
+ 
 
   constructor(props){
     super(props)
@@ -50,10 +50,10 @@ class App extends Component {
     
 
      
-  FetchCurrentWeather(){
+  FetchCurrentWeather(props){
             
   
-              fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+              fetch(`${API_URL}weather?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
               .then(response => response.json())
               .then(parsedJSON => 
                   
@@ -68,9 +68,9 @@ class App extends Component {
                    
       }
 
-  FetchFiveWeather(){
+  FetchFiveWeather(props){
           
-     fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+     fetch(`${API_URL}forecast?q=${this.state.searchQuery}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
       .then(response => response.json())
       .then(parsedJSON => 
       this.setState({
@@ -80,9 +80,9 @@ class App extends Component {
     .catch(error => console.log('This is an error', error))
       
   }
-  FetchUserFiveDay(){
-    console.log("render")
-    fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+  FetchUserFiveDay(props){
+    
+    fetch(`${API_URL}forecast?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
     .then(response => response.json())
     .then(parsedJSON => 
       this.setState({
@@ -92,9 +92,9 @@ class App extends Component {
     .catch(error => console.log('This is an error', error))
       
   }
-  FetchUserWeather(){
-    console.log('user',this.state.lat)
-    fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
+  FetchUserWeather(props){
+    
+    fetch(`${API_URL}/weather?lat=${this.state.lat}&lon=${this.state.lon}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
     .then(response => response.json())
     .then(parsedJSON => 
                   
@@ -111,7 +111,7 @@ class App extends Component {
   }
       
   handleSubmit(event, value){
-      console.log("the value is", value)
+     
       this.setState({ searchQuery: value }, () => {
         (() => { this.FetchCurrentWeather() })();
         (() => { this.FetchFiveWeather() })(); })

@@ -15,7 +15,7 @@ const Time = (props) => {
 	})
 		
 	Object.keys(newList).forEach((key) => (newList[key] === undefined) && delete newList[key]);
-	console.log(newList)
+	
 	return (
 		<div className='LookAhead'>
 		<h3> A look ahead at the next 5 days at noon </h3>
