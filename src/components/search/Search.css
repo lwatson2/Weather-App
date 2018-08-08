@@ -1,12 +1,12 @@
-.Search{
-	text-align: center;
+.Search {
+  text-align: center;
 }
-.Input{
-	 background: transparent; 
-    outline: 0;
-    border: 0;
-    border-bottom: 2px solid grey; 
+.Input {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid grey;
 }
 .myButton {
-	border-radius: 10px;
-	}
+  border-radius: 10px;
+}

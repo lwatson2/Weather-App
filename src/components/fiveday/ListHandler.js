@@ -1,28 +1,14 @@
-import React from 'react'
-import Time from './FiveDayForecast'
+import React from 'react';
+import Time from './FiveDayForecast';
 
+const Sevenday = props => {
+  const { fivedayforecast } = props;
 
+  if (fivedayforecast.list) {
+    return <Time list={fivedayforecast.list} />;
+  }
 
-const Sevenday = (props) => {
-	
-		  const { fivedayforecast } = props
-		
-		
-		 
-		  if(fivedayforecast.list){
-		  return (
-	<Time list={fivedayforecast.list}/>)
-	}
-	
-		
+  return <div />;
+};
 
-	
-	return(
-		<div>
-		
-		</div>
-		)
-
-		}
- 
-export default Sevenday
+export default Sevenday;

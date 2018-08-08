@@ -1,38 +1,36 @@
-
-  .Card {
+.Card {
   min-width: 200px;
   margin: 5px;
   display: inline-block;
-  height: 150px
-  }
+  height: 150px;
+}
 .Card-Item {
-	display: inline-block;
+  display: inline-block;
 }
 .Current-Temp {
-	width: 170px;
-	position: relative;
-	top: 124px;
-	left: 28px;
+  width: 170px;
+  position: relative;
+  top: 124px;
+  left: 28px;
 }
 .Current-Conditions {
-	position: relative;
-    top: 12px;
-    left: 45%;
-    box-shadow: 2px 5px 20px;
-    max-width: 200px;
-    border-radius: 16px;
-
+  position: relative;
+  top: 12px;
+  left: 45%;
+  box-shadow: 2px 5px 20px;
+  max-width: 200px;
+  border-radius: 16px;
 }
 .C-Icon {
-	padding-left: 69px;
+  padding-left: 69px;
 }
-.C-Temp{
-	text-align: center
+.C-Temp {
+  text-align: center;
 }
-.C-Description{
-	text-align: center;
+.C-Description {
+  text-align: center;
 }
-.C-Conditions{
-	text-align: center;
-	padding-left: 92px
+.C-Conditions {
+  text-align: center;
+  padding-left: 92px;
 }

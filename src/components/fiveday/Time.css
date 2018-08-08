@@ -1,33 +1,33 @@
-.List{
-	display: flex;
-	max-width: 500px;
-	flex-direction: row;
-	position: absolute;
-	top: 70%;
-	left: 34%;
-	box-shadow: 2px 5px 20px;
-	border-radius: 20px
+.List {
+  display: flex;
+  max-width: 500px;
+  flex-direction: row;
+  position: absolute;
+  top: 70%;
+  left: 34%;
+  box-shadow: 2px 5px 20px;
+  border-radius: 20px;
 }
-.WeatherList{
-	list-style-type: none;
-	padding: 6px;
+.WeatherList {
+  list-style-type: none;
+  padding: 6px;
 }
-.LookAhead{
-	text-align: center;
-	padding-left: 77px;
-	padding-top: 66px;
+.LookAhead {
+  text-align: center;
+  padding-left: 77px;
+  padding-top: 66px;
 }
 
-@media (max-width: 400px){
-	.LookAhead{
+@media (max-width: 400px) {
+  .LookAhead {
     padding-left: 116px;
     position: relative;
     min-width: 400px;
-	}
+  }
 }
-@media (max-width: 400px){
-	.List{
-	top: 10rem;
+@media (max-width: 400px) {
+  .List {
+    top: 10rem;
     left: 72px;
-	}
-	}
+  }
+}
